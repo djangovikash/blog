@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{%extends 'rblog/base.html'%}
+{%block body_block%}
+
+{%load staticfiles%}
+<link rel="stylesheet"href="{% static 'css/b.css' %}">
+<div class="container">
+
+
+<div class="jumbotron">
+
+
+<h1>{{post.title|title}}</h1>
+<h2>This post is written by {{post.author|upper}} on {{post.created}}</h2>
+<h3>{{post.body|linebreaks}}</h3>
+<a class="btn btn-primary "href="/read">ReadAnother</a>
+</div
+</div>
+{%endblock%}

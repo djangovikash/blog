@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{%extends 'rblog/base.html'%}
+{%block body_block%}
+
+{%load staticfiles%}
+<link rel="stylesheet"href="{% static 'css/b.css' %}">
+<div class="container">
+  <div class="jumbotron">
+
+<h3></h3>
+<form method="post">
+  {{form.as_p}}
+  {%csrf_token%}
+  <input id="button" type="submit" name="" class="btn btn-primary" value="LOGIN">
+
+</form>
+</div>
+
+</div>
+
+{%endblock%}

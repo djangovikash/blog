@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+
+    <nav class="navbar sticky-top navbar-inverse" style="background-color:purple;" >
+      <div class="container">
+      <div class="nav navbar-brand">
+        <a href="#" class="navbar-brand">SayYourHeartOut.com</a>
+
+      </div>
+      <ul class="nav navbar-nav" >
+
+        <li> <a href="/">Home</a></li>
+        <li> <a href="/blog">BLOG</a></li>
+        <li> <a href="/read">ReadTheBlog</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a href="/accounts/login">LOGIN</a></li>
+        <li> <a href="/singup">SINGUP</a></li>
+        <li> <a href="/accounts/logout">LOGOUT</a></li>
+      </ul>
+    </div>
+    </nav>
+
+    {%block body_block%}
+    {%endblock%}
+  </body>
+</html>

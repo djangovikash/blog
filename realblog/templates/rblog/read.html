@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{%extends 'rblog/base.html'%}
+{%block body_block%}
+
+{%load staticfiles%}
+<link rel="stylesheet"href="{% static 'css/base.css' %}">
+<div class="container">
+  <div class="jumbotron">
+
+
+{%for post in post_list%}
+<h1><a href="/{{post.id}}">{{post.title|title}}</a></h1>
+<h4>published by {{post.author|upper}} on {{post.created}}</h4>
+<h3>{{post.body|truncatewords:50|linebreaks}}</h3>
+{%endfor%}
+
+</div>
+
+</div>
+{%endblock%}
